@@ -10,6 +10,7 @@
 	<body>
 		
 		<h2><% Abitante abitanteInPagina = (Abitante) request.getAttribute("abitanteDaEliminare"); %>
+		
 		il nome è: <%=abitanteInPagina.getNome() %> <br>
 		il cognome è: <%=abitanteInPagina.getCognome() %> <br>
 		il codice fiscale è: <%=abitanteInPagina.getCodiceFiscale() %> <br>

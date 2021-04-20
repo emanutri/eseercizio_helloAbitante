@@ -27,7 +27,7 @@ public class Abitante {
 		this.eta = eta;
 		this.mottoDiVita = mottoDiVita;
 	}
-	
+
 	public Abitante(String nome, String cognome, String codiceFiscale, int eta, String mottoDiVita) {
 		super();
 		this.nome = nome;

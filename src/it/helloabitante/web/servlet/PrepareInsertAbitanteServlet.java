@@ -12,15 +12,15 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/PrepareInsertAbitanteServlet")
 public class PrepareInsertAbitanteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    public PrepareInsertAbitanteServlet() {
-        super();
-    }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public PrepareInsertAbitanteServlet() {
+		super();
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		RequestDispatcher rd = request.getRequestDispatcher("insert.jsp");
 		rd.forward(request, response);
 	}
-
 
 }

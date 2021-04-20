@@ -8,5 +8,6 @@ import it.helloabitante.model.Abitante;
 
 public interface AbitanteDAO extends IBaseDAO<Abitante> {
 	public void setConnection(Connection connection);
+
 	public List<Abitante> findByNomeAndCognome(String nome, String cognome);
 }

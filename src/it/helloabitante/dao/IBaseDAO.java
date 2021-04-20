@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.util.List;
 
 public interface IBaseDAO<T> {
-	
+
 	public List<T> list() throws Exception;
 
 	public T get(Long id) throws Exception;

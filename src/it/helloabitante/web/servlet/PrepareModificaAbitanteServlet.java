@@ -11,19 +11,24 @@ import javax.servlet.http.HttpServletResponse;
 
 import it.helloabitante.model.Abitante;
 import it.helloabitante.service.MyServiceFactory;
+
 @WebServlet("/PrepareModificaAbitante")
 public class PrepareModificaAbitanteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    public PrepareModificaAbitanteServlet() {
-        super();
-    }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+	public PrepareModificaAbitanteServlet() {
+		super();
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
 		String parametroIdDellAbitanteCheVoglioEliminare = request.getParameter("idDaInviareComeParametro");
 		Abitante result = null;
 		try {
-			result = MyServiceFactory.getAbitanteServiceInstance().findById(Long.parseLong(parametroIdDellAbitanteCheVoglioEliminare));//(long) Integer.parseInt(parametroIdDellAbitanteCheVoglioEliminare));
+			result = MyServiceFactory.getAbitanteServiceInstance()
+					.findById(Long.parseLong(parametroIdDellAbitanteCheVoglioEliminare));// (long)
+																							// Integer.parseInt(parametroIdDellAbitanteCheVoglioEliminare));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

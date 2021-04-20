@@ -1,6 +1,5 @@
 package it.helloabitante.service.abitante;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import it.helloabitante.dao.abitante.AbitanteDAO;

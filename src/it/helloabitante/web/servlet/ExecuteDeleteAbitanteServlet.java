@@ -25,7 +25,7 @@ public class ExecuteDeleteAbitanteServlet extends HttpServlet {
 
 		String idAbitanteParameter = request.getParameter("idAbitante");
 		Abitante abitante = null;
-		
+
 		try {
 
 			abitante = MyServiceFactory.getAbitanteServiceInstance().findById(Long.parseLong(idAbitanteParameter));
